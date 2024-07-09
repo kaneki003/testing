@@ -8,7 +8,9 @@ function setup() {
   noCanvas();
   video = createCapture(VIDEO);
   // video.size(100, 50);
-  video.size(200, 72);
+  // video.size(75, 62);  //0.192,0.073
+  video.size(window.innerWidth * 0.192, window.innerHeight * 0.093); //0.192,0.073 //0.106,0.080
+  // video.size(window.innerWidth * 0.106, window.innerHeight * 0.080); //0.192,0.073 //0.106,0.080
   asciiDiv = createDiv();
   video.hide();
 }
